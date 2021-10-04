@@ -1,0 +1,9 @@
+<!ENTITY version "V0.01 (C) Team 2 2019">
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ATTLIST user
+        accountType (0|1|2|3) "0"
+        >
+<!ELEMENT user (username, password)>
+<!ELEMENT users (description, (user*))>

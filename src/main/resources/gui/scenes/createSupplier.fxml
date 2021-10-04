@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" stylesheets="@../stylesheets/redTheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.CreateSupplierController">
+   <children>
+      <AnchorPane layoutX="248.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="cancelCreateButton" layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#cancelCreate" styleClass="mainButton2" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+            <Button fx:id="createSupplierButton" layoutX="579.0" layoutY="400.0" mnemonicParsing="false" onAction="#createSupplier" styleClass="mainButton2" text="Confirm" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <Text layoutX="15.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Create Supplier" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="47.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Name" AnchorPane.leftAnchor="120.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="117.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Contact Phone" AnchorPane.leftAnchor="120.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="supplierName" layoutX="271.0" layoutY="80.0" AnchorPane.leftAnchor="320.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="supplierContact" layoutX="254.0" layoutY="140.0" AnchorPane.leftAnchor="320.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Text fx:id="badSupName" layoutX="591.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="badSupContact" layoutX="591.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

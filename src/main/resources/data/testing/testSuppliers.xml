@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suppliers SYSTEM "supplier.dtd">
+<suppliers>
+    <description>List of suppliers</description>
+    <supplier>
+        <contact>0800838383</contact>
+        <name>Josh</name>
+    </supplier>
+</suppliers>

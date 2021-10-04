@@ -1,0 +1,321 @@
+* {
+    -main-bg-colour: #2C2F33;
+    -structure-bg-colour: #23272A;
+    -sidebar-bg-colour: #555555;
+    -sidebar-bg-colour-selected: #424242;
+    -sidebar2-bg-colour: #444444;
+
+    -main-text-colour: #FFFFFF;
+    -second-text-colour: #FFFFFF;
+
+    -main-button-colour: #777777;
+    -main-button-hover-colour: #555555;
+    -important-button-colour: #23272A;
+    -important-button-hover-colour: #2C2F33;
+
+    -muted-color: -main-bg-colour, 70%
+}
+
+/* root pane */
+#mainPane {
+    -fx-background-color: -main-bg-colour;
+}
+
+/* top bar and section divider panes */
+.secondaryPane {
+    -fx-background-color: -structure-bg-colour;
+}
+
+/* small divider panes */
+.dividerPane {
+    -fx-background-color: -structure-bg-colour;
+}
+
+.framePane {
+    -fx-background-color: -main-button-colour;
+    -fx-background-radius: 5;
+    -fx-text-fill: -main-text-colour;
+}
+
+/* menu sidebar */
+.sidebar {
+    -fx-background-color: -sidebar-bg-colour;
+}
+
+.sidebarButton {
+    -fx-background-color: -sidebar-bg-colour;
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 30px;
+    -fx-text-fill: -main-text-colour;
+}
+
+.sidebarButton:hover {
+    -fx-background-color: -main-bg-colour;
+}
+
+.sidebarButton:disabled {
+    -fx-background-color: -main-button-colour;
+    -fx-colour: -main-text-colour;
+    -fx-opacity: 1;
+}
+
+.buttonDivider {
+    -fx-background-color: -sidebar-bg-colour;
+}
+
+/* generic labels */
+.label1 {
+    -fx-font-family: Arial;
+    -fx-font-size: 30px;
+    -fx-text-fill: -main-text-colour;
+}
+
+.label2 {
+    -fx-text-fill: -main-text-colour;
+    -fx-wrap-text: true;
+}
+
+.label3 {
+    -fx-text-fill: #FFFFFF;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-font-size: 18px;
+}
+
+.label3 .text{
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 1px;
+}
+
+.text1 {
+    -fx-fill: -main-text-colour;
+}
+
+/* generic buttons */
+.secondButton {
+    -fx-background-color: -important-button-colour;
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 30px;
+    -fx-text-fill: -second-text-colour;;
+}
+
+.secondButton:hover {
+    -fx-background-color: -important-button-hover-colour;
+}
+
+.smallButton {
+    -fx-background-color: -important-button-colour;
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-text-fill: -second-text-colour;;
+}
+
+.smallButton:hover {
+    -fx-background-color: -important-button-hover-colour;
+}
+
+.mainButton {
+    -fx-background-color: -main-button-colour;
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 30px;
+    -fx-wrap-text: true;
+    -fx-text-fill: -main-text-colour;
+}
+
+.mainButton:hover {
+    -fx-background-color: -main-button-hover-colour;
+}
+
+.mainButton2 {
+    -fx-background-color: -main-button-colour;
+    -fx-background-radius: 5;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-wrap-text: true;
+    -fx-text-fill: -main-text-colour;
+}
+
+.mainButton2:hover {
+    -fx-background-color: -main-button-hover-colour;
+}
+
+/* order pane */
+.orderPane {
+    -fx-background-color: -sidebar-bg-colour;
+    -fx-text-fill: -main-text-colour;
+}
+
+.selectedItem {
+    -fx-background-color: -main-button-colour;
+    -fx-colour: -main-text-colour;
+}
+
+.evenItem {
+    -fx-background-color: -sidebar2-bg-colour;
+}
+
+.oddItem {
+    -fx-background-color: -sidebar-bg-colour;
+}
+
+/* scroll panes */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: -sidebar-bg-colour;
+}
+
+/* category bar */
+.categoryButton {
+    -fx-background-color: -structure-bg-colour;
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 30px;
+    -fx-text-fill: -second-text-colour;
+    -fx-wrap-text: true;
+}
+
+.categoryButton:hover {
+    -fx-background-color: -important-button-hover-colour;
+}
+
+/* items */
+.menuItemButton {
+    -fx-background-color: -main-button-colour;
+    -fx-background-radius: 5;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-wrap-text: true;
+    -fx-text-fill: -main-text-colour;
+}
+
+.menuItemButton:hover {
+    -fx-background-color: -main-button-hover-colour;
+}
+
+.menuItemPane {
+    -fx-background-color: -main-button-colour;
+    -fx-background-radius: 5;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+    -fx-font-weight: bold;
+    -fx-text-fill: -main-text-colour;
+}
+
+.menuItemPane:hover {
+    -fx-opacity: 0.8;
+}
+
+.importantMenuButton {
+    -fx-background-color: -main-button-colour;
+    -fx-background-radius: 5;
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
+    -fx-wrap-text: true;
+    -fx-text-fill: -main-text-colour;
+    -fx-font-weight: bold;
+    -fx-background-insets: 5px;
+}
+
+.importantMenuButton:hover {
+    -fx-background-color: -main-button-hover-colour;
+}
+
+.importantMenuButton:disabled {
+    -fx-background-color: -main-button-hover-colour;
+    -fx-opacity: 1;
+    -fx-background-insets: 0px;
+    -fx-background-radius: 2px;
+}
+
+/* other */
+#removeButton {
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-text-fill: -main-text-colour;
+    -fx-padding: 0 10 0 10;
+    -fx-background-color: transparent;
+}
+
+#removeButton:hover {
+    -fx-text-fill: #444444;
+}
+
+/* Cash Screen */
+.cashButton {
+    -fx-background-radius: 0;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-text-fill: -main-text-colour;
+    -fx-padding: 20 0 0 0;
+    -fx-background-color: -main-button-colour
+}
+
+.cashButton:hover {
+    -fx-background-color: -main-button-hover-colour;
+}
+
+.adjustCashButton {
+    -fx-background-radius: 20;
+    -fx-font-family: Arial;
+    -fx-font-size: 30px;
+    -fx-text-fill: -second-text-colour;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: -important-button-colour
+}
+
+.adjustCashButton:hover {
+    -fx-background-insets: -2;
+    -fx-background-radius: 22;
+    -fx-background-color: -important-button-hover-colour;
+}
+
+/* Combobox */
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 50px;
+    -fx-text-fill: -main-text-colour;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: -main-button-colour;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 8, 0.0, 0, 0);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-padding: 4 0 4 5;
+    -fx-background-color: -main-button-colour;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover {
+    -fx-background-color: -important-button-colour;
+    -fx-text-fill: -second-text-colour;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: -main-button-hover-colour;
+    -fx-text-fill: -main-text-colour;
+}
+
+.combo-box-base {
+    -fx-background-color: -main-button-colour;
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+    -fx-text-fill: -main-text-colour;
+}
+
+.combo-box-base:hover {
+    -fx-background-color: -main-button-hover-colour;
+}
+
+.combo-box-base:showing {
+    -fx-background-color: -main-button-hover-colour;
+}

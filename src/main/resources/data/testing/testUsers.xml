@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE users SYSTEM "user.dtd">
+<users>
+    <description>List of users</description>
+    <user accountType="3">
+        <username>ownerbob</username>
+        <password>owner</password>
+    </user>
+</users>

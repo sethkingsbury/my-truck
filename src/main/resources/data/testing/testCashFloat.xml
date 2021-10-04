@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE wad SYSTEM "Cash.dtd">
+<wad>
+    <description>List of cash denominations</description>
+    <cash>
+        <type>Coin</type>
+        <denomination>10</denomination>
+        <valueInCents>10</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+</wad>

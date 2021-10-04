@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" stylesheets="@../stylesheets/redTheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.CreateUserController">
+    <children>
+        <AnchorPane layoutX="248.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <children>
+                <Button fx:id="cancelCreateButton" layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#cancelCreate" styleClass="mainButton2" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+                <Button fx:id="createUserButton" layoutX="579.0" layoutY="400.0" mnemonicParsing="false" onAction="#createUser" styleClass="mainButton2" text="Confirm" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                <Text fx:id="popupTitle" layoutX="15.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Create User" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                    </font>
+                </Text>
+                <Text layoutX="137.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Username" AnchorPane.leftAnchor="137.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="userUsername" layoutX="339.0" layoutY="76.0" prefHeight="33.0" prefWidth="236.0" AnchorPane.leftAnchor="344.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="userPassword" layoutX="344.0" layoutY="129.0" AnchorPane.leftAnchor="344.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="userPermissions" layoutX="344.0" layoutY="179.0" AnchorPane.leftAnchor="344.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Text fx:id="badUsername" layoutX="591.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="badPassword" layoutX="591.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+            <Text fx:id="badPermissions" layoutX="590.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="141.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="142.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Permission Level">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</AnchorPane>

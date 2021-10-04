@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE recipes SYSTEM "recipe.dtd">
+<recipes>
+	<description>List of Recipes</description>
+	<recipe>
+		<name>Beef Burger</name>
+		<code>BBurger</code>
+		<ingredients>
+			<ingredient>
+				<code>Salt</code>
+				<amount>10</amount>
+			</ingredient>
+			<ingredient>
+				<code>BBun</code>
+				<amount>2</amount>
+			</ingredient>
+            <ingredient>
+                <code>Cheese</code>
+                <amount>2</amount>
+            </ingredient>
+            <ingredient>
+                <code>BPat</code>
+                <amount>1</amount>
+            </ingredient>
+		</ingredients>
+	</recipe>
+</recipes>

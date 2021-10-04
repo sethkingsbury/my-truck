@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="700.0" stylesheets="@../stylesheets/redTheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.CreateIngredientController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="690.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="cancelCreateButton" layoutX="14.0" layoutY="391.0" mnemonicParsing="false" onAction="#cancelCreate" prefHeight="29.0" prefWidth="80.0" styleClass="mainButton2" text="Cancel" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="14.0" />
+            <Text layoutX="10.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Create Ingredient" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="127.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Name" AnchorPane.leftAnchor="127.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="127.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Code" AnchorPane.leftAnchor="127.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="127.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Measurement" AnchorPane.leftAnchor="127.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="127.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Stock amount" AnchorPane.leftAnchor="127.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="127.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Price" AnchorPane.leftAnchor="127.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="132.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Gluten Free" AnchorPane.leftAnchor="132.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="132.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Vegetarian" AnchorPane.leftAnchor="132.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="132.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Vegan" AnchorPane.leftAnchor="132.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ingredientName" layoutX="327.0" layoutY="63.0" prefHeight="33.0" prefWidth="236.0" AnchorPane.leftAnchor="327.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ingredientCode" layoutX="327.0" layoutY="103.0" AnchorPane.leftAnchor="327.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ingredientMeasurement" layoutX="327.0" layoutY="143.0" AnchorPane.leftAnchor="327.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ingredientAmount" layoutX="327.0" layoutY="183.0" AnchorPane.leftAnchor="327.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ingredientPrice" layoutX="327.0" layoutY="223.0" AnchorPane.leftAnchor="330.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="ingredientGF" layoutX="332.0" layoutY="268.0" mnemonicParsing="false" AnchorPane.leftAnchor="332.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="ingredientVegan" layoutX="332.0" layoutY="347.0" mnemonicParsing="false" AnchorPane.leftAnchor="332.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="ingredientVege" layoutX="332.0" layoutY="308.0" mnemonicParsing="false" AnchorPane.leftAnchor="332.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="createIngredientButton" layoutX="585.0" layoutY="391.0" mnemonicParsing="false" onAction="#createIngredient" styleClass="mainButton2" text="Confirm" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="15.0" />
+            <Text fx:id="badName" layoutX="579.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="12.5" AnchorPane.bottomAnchor="347.10400390625" AnchorPane.topAnchor="63.79443359375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="badCode" layoutX="579.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="12.5" AnchorPane.topAnchor="104.79443359375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="badMeasure" layoutX="579.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="12.5" AnchorPane.topAnchor="144.79443359375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="badAmount" layoutX="579.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="12.5" AnchorPane.topAnchor="184.79443359375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="badPrice" layoutX="579.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="12.5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

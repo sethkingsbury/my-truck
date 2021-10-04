@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE menus SYSTEM "menu.dtd">
+<menus>
+    <description>List of menus</description>
+    <menu>
+        <code>BBurger</code>
+        <name>Beef Burger</name>
+        <price>6</price>
+        <category>Main Course</category>
+    </menu>
+</menus>

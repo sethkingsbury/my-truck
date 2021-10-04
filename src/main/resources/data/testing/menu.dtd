@@ -1,0 +1,14 @@
+<!-- DTD for representing ingredients -->
+<!-- (C) Neville Churcher 2019 -->
+<!-- Note that the ingredient codes will need to
+     match the corresponding entries in menus
+-->
+<!ENTITY version "V0.01 (C) Team 2 2019">
+<!ELEMENT menus (description, (menu*))>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT menu (code, name, price, category)>
+<!ELEMENT name   (#PCDATA)>
+<!ELEMENT code   (#PCDATA)>
+<!ELEMENT price  (#PCDATA)>
+<!ELEMENT recipe (#PCDATA)>
+<!ELEMENT category (#PCDATA)>

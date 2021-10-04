@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE wad SYSTEM "Cash.dtd">
+<wad>
+    <description>List of cash denominations</description>
+    <cash>
+        <type>Coin</type>
+        <denomination>10</denomination>
+        <valueInCents>10</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Coin</type>
+        <denomination>20</denomination>
+        <valueInCents>20</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Coin</type>
+        <denomination>50</denomination>
+        <valueInCents>50</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Coin</type>
+        <denomination>1</denomination>
+        <valueInCents>100</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Coin</type>
+        <denomination>2</denomination>
+        <valueInCents>200</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Note</type>
+        <denomination>5</denomination>
+        <valueInCents>500</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Note</type>
+        <denomination>10</denomination>
+        <valueInCents>1000</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Note</type>
+        <denomination>20</denomination>
+        <valueInCents>2000</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Note</type>
+        <denomination>50</denomination>
+        <valueInCents>5000</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+    <cash>
+        <type>Note</type>
+        <denomination>100</denomination>
+        <valueInCents>10000</valueInCents>
+        <initialQuantity>100</initialQuantity>
+    </cash>
+</wad>

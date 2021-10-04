@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ingredients SYSTEM "ingredient.dtd">
+<ingredients>
+    <description>Our ingredients in no particular order (incomplete).</description>
+
+    <ingredient unit="ml">
+        <code>BBun</code>
+        <name>Burger Bun</name>
+        <amount>1</amount>
+        <price>100</price>
+    </ingredient>
+</ingredients>

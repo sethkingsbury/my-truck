@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="960.0" prefWidth="1420.0" stylesheets="@../stylesheets/redTheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.CreateMenuItemController">
+   <children>
+      <AnchorPane layoutX="79.0" layoutY="77.0" prefHeight="450.0" prefWidth="700.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Create Menu Item" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Image Path" AnchorPane.bottomAnchor="175.283203125" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="501.435546875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Category" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="301.435546875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Name" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="151.435546875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Code" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="201.435546875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Price" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="251.435546875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="menuItemName" layoutX="144.0" layoutY="151.0" prefHeight="26.0" prefWidth="207.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="151.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="menuItemCode" layoutX="144.0" layoutY="201.0" prefHeight="26.0" prefWidth="207.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="201.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="menuItemCategory" layoutX="144.0" layoutY="301.0" prefHeight="26.0" prefWidth="207.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="301.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="menuItemPrice" layoutX="144.0" layoutY="251.0" prefHeight="26.0" prefWidth="207.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="251.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="cancelCreateButton" layoutX="27.0" layoutY="635.0" mnemonicParsing="false" onAction="#cancelCreate" styleClass="mainButton2" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+            <Button fx:id="createMenuItem" layoutX="1184.0" layoutY="661.0" mnemonicParsing="false" onAction="#createMenuItem" styleClass="mainButton2" text="Confirm" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <ImageView fx:id="imagePreview" fitHeight="80.0" fitWidth="100.0" layoutX="198.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" />
+            <ScrollPane fx:id="menuItemIngsPane" layoutX="410.0" layoutY="55.0" prefHeight="762.0" prefWidth="446.0" AnchorPane.leftAnchor="410.0" AnchorPane.rightAnchor="544.0" AnchorPane.topAnchor="50.0">
+               <content>
+                  <TableView fx:id="ingTable" prefHeight="758.0" prefWidth="431.0">
+                    <columns>
+                      <TableColumn fx:id="ingCode" prefWidth="81.66668701171875" text="Code" />
+                      <TableColumn fx:id="ingName" prefWidth="183.66668701171875" text="Name" />
+                        <TableColumn fx:id="ingGF" prefWidth="42.33331298828125" text="GF" />
+                        <TableColumn fx:id="ingVege" prefWidth="52.33331298828125" text="Vege" />
+                        <TableColumn fx:id="ingVegan" minWidth="0.0" prefWidth="65.0" text="Vegan" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="menuItemIngsPane1" layoutX="875.0" layoutY="17.0" prefHeight="765.0" prefWidth="488.0" AnchorPane.topAnchor="50.0">
+               <content>
+                  <TableView fx:id="ingTable1" prefHeight="779.0" prefWidth="474.0">
+                     <columns>
+                        <TableColumn fx:id="ingCode1" prefWidth="67.0" text="Code" />
+                        <TableColumn fx:id="ingName1" prefWidth="176.0" text="Name" />
+                        <TableColumn fx:id="ingGF1" prefWidth="41.0" text="GF" />
+                        <TableColumn fx:id="ingVege1" prefWidth="52.0" text="Vege" />
+                        <TableColumn fx:id="ingVegan1" prefWidth="63.3333740234375" text="Vegan" />
+                        <TableColumn fx:id="ingAmount1" prefWidth="68.6666259765625" text="Amount" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <TextField fx:id="itemImagePath" layoutX="144.0" layoutY="501.0" prefHeight="33.0" prefWidth="207.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="501.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="selectImageButton" layoutX="357.0" layoutY="500.0" mnemonicParsing="false" onAction="#openFileViewer" prefHeight="33.0" prefWidth="36.0" styleClass="mainButton2" text="^" />
+            <Button fx:id="addIngButton" layoutX="793.0" layoutY="836.0" mnemonicParsing="false" onAction="#addIng" styleClass="mainButton2" text="Add" />
+            <Button fx:id="removeIngButton" layoutX="1289.0" layoutY="833.0" mnemonicParsing="false" onAction="#removeIng" styleClass="mainButton2" text="Remove" />
+            <Button fx:id="clearIngButton" layoutX="1205.0" layoutY="833.0" mnemonicParsing="false" onAction="#clearIng" styleClass="mainButton2" text="Clear" />
+            <TextField fx:id="ingAmount" layoutX="589.0" layoutY="836.0" prefHeight="26.0" prefWidth="54.0" />
+            <Text layoutX="430.0" layoutY="854.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Amount" />
+            <Text fx:id="ingAmountWarning" layoutX="671.0" layoutY="857.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="728.0" layoutY="836.0" mnemonicParsing="false" onAction="#editIng" styleClass="mainButton2" text="Edit" />
+            <Text fx:id="itemNameMissing" layoutX="362.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="itemCategoryMissing" layoutX="361.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="itemPriceMissing" layoutX="362.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="itemCodeMissing" layoutX="362.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="*" visible="false" wrappingWidth="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="noIngselected" layoutX="928.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="No Ingredients selected!" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ingredients SYSTEM "ingredient.dtd">
+<ingredients>
+    <description>Our ingredients in no particular order (incomplete).</description>
+    <ingredient unit="ml" >
+        <code>Salt</code>
+        <name>Table salt</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count" isgf="no">
+        <code>BBun</code>
+        <name>Hamburger bun</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count" isveg="no" isvegan="no">
+        <code>BPat</code>
+        <name>Beef patty</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g" isveg="yes">
+        <code>Onion</code>
+        <name>Diced onion</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>TSauce</code>
+        <name>Tomato sauce</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count" isgf="yes">
+        <code>Beetroot</code>
+        <name>Beetroot slice</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Lettuce</code>
+        <name>lettuce</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Mayo</code>
+        <name>Mayonnaise</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Chicken</code>
+        <name>Chicken breast</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Rice</code>
+        <name>Rice</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Soy</code>
+        <name>Soy sauce</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Oil</code>
+        <name>Canola oil</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count">
+        <code>LemCan</code>
+        <name>Lemonade</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>OlOil</code>
+        <name>Olive oil</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Bacon</code>
+        <name>Shoulder Bacon</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Garlic</code>
+        <name>Garlic</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Brandy</code>
+        <name>Brandy</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>RedWine</code>
+        <name>Red wine</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>CStock</code>
+        <name>Chicken stock</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Herbs</code>
+        <name>Mixed herbs</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count">
+        <code>Bay</code>
+        <name>Bay leaf</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Shrooms</code>
+        <name>Button mushrooms</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Flour</code>
+        <name>Flour</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Vodka</code>
+        <name>Vodka</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Cassis</code>
+        <name>Torlesse Cassis</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>Cream</code>
+        <name>Cream</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>Choc</code>
+        <name>Drinking Chocolate</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>milk</code>
+        <name>Milk</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="ml">
+        <code>TrimMilk</code>
+        <name>Trim milk</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count">
+        <code>Cheese</code>
+        <name>Cheese</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count">
+        <code>egg</code>
+        <name>Egg</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>butter</code>
+        <name>Butter</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>gsyrup</code>
+        <name>Golden Syrup</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="count">
+        <code>bread</code>
+        <name>Bread Slice</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+    <ingredient unit="g">
+        <code>peanutbutter</code>
+        <name>Peanut Butter</name>
+        <amount>1000</amount>
+        <price>100</price>
+    </ingredient>
+</ingredients>

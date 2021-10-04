@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../stylesheets/redTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.ViewDataController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="240.0" prefWidth="240.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="8.0" minWidth="8.0" prefWidth="8.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1702.0" minWidth="10.0" prefWidth="1678.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="120.0" minHeight="120.0" prefHeight="120.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="1018.0" minHeight="300.0" prefHeight="963.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="secondaryPane" GridPane.columnIndex="2" />
+        <VBox fx:id="navigationMenu" minHeight="300.0" prefHeight="200.0" prefWidth="100.0" styleClass="sidebar" GridPane.rowIndex="1">
+            <children>
+                <Button fx:id="salesMenuButton" minHeight="70.0" mnemonicParsing="false" onAction="#swapToSalesScene" prefHeight="70.0" prefWidth="280.0" styleClass="sidebarButton" text="Sales" />
+                <Pane prefHeight="5.0" prefWidth="227.0" styleClass="buttonDivider" />
+                <Button fx:id="orderMenuButton" minHeight="70.0" mnemonicParsing="false" onAction="#swapToOrderScene" prefHeight="70.0" prefWidth="280.0" styleClass="sidebarButton" text="Orders" />
+                <Pane prefHeight="5.0" prefWidth="227.0" styleClass="buttonDivider" />
+            <Button fx:id="analyticsMenuButton" minHeight="70.0" mnemonicParsing="false" onAction="#swapToAnalyticsScene" prefHeight="70.0" prefWidth="280.0" styleClass="sidebarButton" text="Analytics" />
+            <Pane layoutX="10.0" layoutY="305.0" prefHeight="5.0" prefWidth="227.0" styleClass="buttonDivider" />
+                <Button fx:id="viewMenuButton" disable="true" minHeight="70.0" mnemonicParsing="false" onAction="#swapToViewDataScene" prefHeight="70.0" prefWidth="280.0" styleClass="sidebarButton" text="View" />
+                <Pane prefHeight="5.0" prefWidth="227.0" styleClass="buttonDivider" />
+                <Button fx:id="uploadMenuButton" minHeight="70.0" mnemonicParsing="false" onAction="#swapToUploadScene" prefHeight="70.0" prefWidth="280.0" styleClass="sidebarButton" text="Upload" />
+                <Pane prefHeight="5.0" prefWidth="227.0" styleClass="buttonDivider" />
+                <Button fx:id="settingsMenuButton" minHeight="70.0" mnemonicParsing="false" onAction="#swapToSettingsScene" prefHeight="70.0" prefWidth="280.0" styleClass="sidebarButton" text="Settings" />
+            </children>
+        </VBox>
+        <GridPane styleClass="secondaryPane" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="219.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="835.0" minWidth="10.0" prefWidth="766.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="120.0" minHeight="120.0" prefHeight="120.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+            <Pane prefHeight="120.0" prefWidth="314.0">
+               <children>
+                      <ComboBox fx:id="dataSelectCombo" layoutX="48.0" layoutY="35.0" onAction="#swapMainPane" prefHeight="50.0" prefWidth="200.0" promptText="Select">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Ingredients" />
+                                  <String fx:value="Menu Items" />
+                                  <String fx:value="Suppliers" />
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+               </children></Pane>
+            <HBox maxHeight="120.0" minWidth="120.0" prefHeight="120.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Button fx:id="newButton" maxHeight="119.0" maxWidth="200.0" minHeight="119.0" minWidth="200.0" mnemonicParsing="false" onAction="#createNewData" prefHeight="119.0" prefWidth="200.0" styleClass="categoryButton" text="New" />
+                  <Button fx:id="editButton" alignment="CENTER" maxHeight="119.0" maxWidth="200.0" minHeight="119.0" minWidth="200.0" mnemonicParsing="false" onAction="#editSelectedRow" prefHeight="119.0" prefWidth="200.0" styleClass="categoryButton" text="Edit" />
+                  <Button fx:id="deleteButton" maxHeight="119.0" maxWidth="200.0" minHeight="119.0" minWidth="200.0" mnemonicParsing="false" onAction="#enableConfirmDelete" prefHeight="119.0" prefWidth="200.0" styleClass="categoryButton" text="Delete" />
+               </children>
+            </HBox>
+            </children>
+        </GridPane>
+        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="secondaryPane">
+            <children>
+                <ImageView fitHeight="81.0" fitWidth="240.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="cashFloatPane" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Pane layoutX="50.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0">
+               <children>
+                  <TableView fx:id="cashFloatTable" prefHeight="800.0" prefWidth="900.0">
+                    <columns>
+                      <TableColumn fx:id="cashFloatDenoms" prefWidth="277.0" text="Denomination" />
+                        <TableColumn fx:id="cashFloatType" prefWidth="317.6666259765625" text="Type" />
+                      <TableColumn fx:id="cashFloatQuantity" minWidth="0.0" prefWidth="304.0" text="Quantity" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children></Pane>
+        <Pane fx:id="ingredientPane" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
+            <Pane layoutX="50.0" layoutY="35.0" prefHeight="800.0" prefWidth="900.0">
+               <children>
+                      <TableView fx:id="ingredientTable" onKeyPressed="#showIngredientMenuItems" onMouseReleased="#showIngredientMenuItems" prefHeight="800.0" prefWidth="900.0">
+                          <columns>
+                              <TableColumn fx:id="ingredientId" minWidth="-1.0" prefWidth="54.0" text="Id" />
+                              <TableColumn fx:id="ingredientCode" minWidth="-1.0" prefWidth="96.0" text="Code" />
+                              <TableColumn fx:id="ingredientName" minWidth="-1.0" prefWidth="200.0" text="Name" />
+                        <TableColumn fx:id="ingredientPrice" prefWidth="89.0" text="Price" />
+                              <TableColumn fx:id="ingredientAmount" minWidth="-1.0" prefWidth="82.0" text="In Stock" />
+                              <TableColumn fx:id="ingredientMeasurement" minWidth="-1.0" prefWidth="68.0" text="Unit" />
+                              <TableColumn fx:id="ingredientGF" minWidth="-1.0" prefWidth="94.0" text="Gluten Free" />
+                              <TableColumn fx:id="ingredientVeg" minWidth="-1.0" prefWidth="91.0" text="Vegetarian" />
+                              <TableColumn fx:id="ingredientVegan" minWidth="-1.0" prefWidth="61.0" text="Vegan" />
+                          </columns>
+                      </TableView>
+               </children>
+            </Pane>
+            <Label fx:id="ingMenuItems" alignment="TOP_LEFT" layoutX="1042.0" layoutY="35.0" lineSpacing="1.2" prefHeight="602.0" prefWidth="436.0" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="menuItemPane" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
+            <Pane layoutX="50.0" layoutY="35.0" prefHeight="800.0" prefWidth="900.0">
+               <children>
+                      <TableView fx:id="menuItemTable" prefHeight="800.0" prefWidth="900.0">
+                          <columns>
+                              <TableColumn fx:id="menuItemName" minWidth="-1.0" prefWidth="88.0" text="Name" />
+                              <TableColumn fx:id="menuItemServings" minWidth="-1.0" prefWidth="111.0" text="Servings" />
+                              <TableColumn fx:id="menuItemPrice" minWidth="-1.0" prefWidth="125.0" text="Price" />
+                              <TableColumn fx:id="menuItemCategory" minWidth="-1.0" prefWidth="125.0" text="Category" />
+                          </columns>
+                      </TableView>
+               </children>
+            </Pane>
+            <VBox fx:id="editPane2" layoutX="1000.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" />
+            <Text fx:id="menuItemErrorMessage" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="590.7294921875" x="1200.0" y="700.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+        <Pane fx:id="supplierPane" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
+                <Pane layoutX="50.0" layoutY="35.0" prefHeight="800.0" prefWidth="900.0">
+                    <children>
+                        <TableView fx:id="supplierTable" prefHeight="800.0" prefWidth="900.0">
+                            <columns>
+                                <TableColumn fx:id="supplierName" prefWidth="246.0" text="Name" />
+                                <TableColumn fx:id="supplierContact" minWidth="0.0" prefWidth="285.0" text="Contact" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </Pane>
+                <VBox fx:id="editPane3" layoutX="1000.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="600.0" />
+                <Text fx:id="supplierErrorMessage" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="590.7294921875" x="1200.0" y="700.0">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Pane fx:id="userPane" layoutX="258.0" layoutY="130.0" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
+                <Pane layoutX="50.0" layoutY="35.0" prefHeight="800.0" prefWidth="900.0">
+                    <children>
+                        <TableView fx:id="userTable" prefHeight="800.0" prefWidth="900.0">
+                            <columns>
+                                <TableColumn fx:id="userId" prefWidth="246.0" text="Id" />
+                                <TableColumn fx:id="userUsername" minWidth="0.0" prefWidth="285.0" text="Username" />
+                                <TableColumn fx:id="userPermissions" minWidth="0.0" prefWidth="285.0" text="Permissions" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </Pane>
+                <VBox fx:id="editPane4" layoutX="1000.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" />
+            </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="secondaryPane" GridPane.columnIndex="1" />
+        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="secondaryPane" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    </children>
+</GridPane>

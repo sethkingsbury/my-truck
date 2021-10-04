@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suppliers SYSTEM "supplier.dtd">
+<suppliers>
+    <description>List of suppliers</description>
+    <supplier>
+        <contact>0220132253</contact>
+        <name>Shivin Gaba</name>
+    </supplier>
+    <supplier>
+        <contact>0215559921</contact>
+        <name>Harry Collard</name>
+    </supplier>
+</suppliers>
